@@ -90,7 +90,7 @@ HAYSTACK_SEARCH_RESULTS_PER_PAGE = 10
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
 sentry_sdk.init(
-    dsn="",  # 自己申请...
+    dsn="",  # 在 sentry 中新建项目获取
     integrations=[DjangoIntegration()],
     traces_sample_rate=1.0,
     send_default_pii=True
@@ -216,7 +216,7 @@ REST_FRAMEWORK_EXTENSIONS = {
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/1",
+        "LOCATION": "redis://127.0.0.1:6379/2",
         "OPTIONS": {
             "CONNECTION_POOL_CLASS": "redis.BlockingConnectionPool",
             "CONNECTION_POOL_CLASS_KWARGS": {"max_connections": 50, "timeout": 20},
