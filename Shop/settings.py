@@ -90,7 +90,7 @@ HAYSTACK_SEARCH_RESULTS_PER_PAGE = 10
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
 sentry_sdk.init(
-    dsn="http://397921dcbad94cc3a42b51d6ed7881b7@127.0.0.1:9000/2",
+    dsn="",  # 自己申请...
     integrations=[DjangoIntegration()],
     traces_sample_rate=1.0,
     send_default_pii=True
