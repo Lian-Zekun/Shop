@@ -5,7 +5,7 @@ from rest_framework.documentation import include_docs_urls
 from django.urls import path, re_path, include
 from rest_framework_jwt.views import obtain_jwt_token, refresh_jwt_token
 
-from FlowerShop.settings import MEDIA_ROOT
+from Shop.settings import MEDIA_ROOT
 from rest_framework.routers import SimpleRouter
 
 from apps.goods.views import GoodsViewSet, HomeView, GoodsSearchView

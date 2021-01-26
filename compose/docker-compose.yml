@@ -251,7 +251,7 @@ services:
       - redis
   elasticsearch:
     image: elasticsearch:2.4.6
-    container_name: flowershop_elasticsearch
+    container_name: shop_elasticsearch
     volumes:
       - "./elasticsearch/data:/usr/share/elasticsearch/data:rw"
       - "./elasticsearch/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml"
